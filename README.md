@@ -54,13 +54,17 @@ Tamakun PM is a full project‑management platform where teams plan work on boar
 
 ## Screenshots
 
-<!-- Add images to the /screenshots folder and reference them below, e.g.:
+### Login
+
+![Tamakun PM — login](screenshots/login.png)
+
+<!-- More views can be added to /screenshots and referenced here, e.g.:
 | Dashboard | Kanban board |
 | --- | --- |
 | ![Dashboard](screenshots/dashboard.png) | ![Board](screenshots/board.png) |
 -->
 
-_Screenshots are added in [`/screenshots`](screenshots). Suggested set: Dashboard · Kanban board · Task detail · Team chat · Analytics · Timesheet._
+_More screenshots (dashboard · Kanban board · task detail · team chat · analytics · timesheet) can be added under [`/screenshots`](screenshots)._
 
 ---
 
