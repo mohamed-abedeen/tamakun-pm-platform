@@ -1,6 +1,24 @@
-# Tamakun PM — Project Management Platform
+<h1 align="center">Tamakun PM — Project Management Platform</h1>
 
-An in‑house project‑management platform built for **Tamakun** and running in production at **[pm.tamakun.sa](https://pm.tamakun.sa)**. It runs the company's engineering and operations end‑to‑end — planning, time tracking, team communication, analytics, and app provisioning — with a standout twist: **first‑class AI‑agent automation**, where AI coding agents pull, execute, and complete real tasks through a built‑in integration.
+<p align="center">
+  An in‑house project‑management platform with <strong>first‑class AI‑agent task automation</strong>, running in production at <a href="https://pm.tamakun.sa">pm.tamakun.sa</a>.
+</p>
+
+<p align="center">
+  <img alt="Status" src="https://img.shields.io/badge/status-in%20production-1E8E4E">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
+  <img alt="NestJS" src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white">
+  <img alt="Prisma" src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white">
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white">
+  <img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white">
+  <img alt="socket.io" src="https://img.shields.io/badge/Realtime-socket.io-010101?logo=socketdotio&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white">
+  <img alt="MCP" src="https://img.shields.io/badge/AI-MCP%20integration-5A67D8">
+  <img alt="i18n" src="https://img.shields.io/badge/i18n-AR%20%2F%20EN%20(RTL)-0891B2">
+  <img alt="License" src="https://img.shields.io/badge/license-proprietary-B23B3B">
+</p>
 
 > ℹ️ **This repository is a showcase / write‑up of the platform.** The source code is private and not included here. All rights reserved.
 
@@ -31,6 +49,18 @@ Tamakun PM is a full project‑management platform where teams plan work on boar
 - 🔔 **Notifications** — in‑app, email, and **Web Push** (installable PWA), with per‑type user preferences.
 - 🔐 **Access control** — role‑based (Admin / Reviewer / Developer), project membership, and invite‑only GitHub sign‑in.
 - 🌍 **Bilingual & RTL** — complete Arabic/English experience with a polished, emerald‑themed UI and light/dark modes.
+
+---
+
+## Screenshots
+
+<!-- Add images to the /screenshots folder and reference them below, e.g.:
+| Dashboard | Kanban board |
+| --- | --- |
+| ![Dashboard](screenshots/dashboard.png) | ![Board](screenshots/board.png) |
+-->
+
+_Screenshots are added in [`/screenshots`](screenshots). Suggested set: Dashboard · Kanban board · Task detail · Team chat · Analytics · Timesheet._
 
 ---
 
@@ -73,6 +103,21 @@ packages/
 **Data layer:** PostgreSQL (system of record) · Redis (cache + realtime) · MinIO (files/attachments) · Meilisearch (search).
 **Realtime:** socket.io channels for chat, notifications, presence, and live board/timer updates.
 **Delivery:** Dockerized services, self‑hosted CI/CD with automatic build → smoke‑test → rollback.
+
+---
+
+## My role & contributions
+
+**Full‑stack engineer & platform architect** — designed and built the platform end to end.
+
+- **Architecture** — designed the Turborepo monorepo (NestJS API, Next.js web, MCP server) and the data layer (PostgreSQL/Prisma, Redis, MinIO, Meilisearch), realtime over socket.io, and cookie‑based JWT auth alongside long‑lived tokens for the agent integration.
+- **AI‑agent workflow (MCP)** — built the Model Context Protocol server and the task lifecycle (pull → start → execute → complete, with context/notes/follow‑ups and file attachments), including per‑task time and token accounting.
+- **Product features** — implemented projects & multi‑view boards (Kanban/List/Calendar/Timeline), time tracking & timesheets, realtime team chat, analytics dashboards & PDF reports, GitHub integration, app provisioning & observability, notifications (in‑app/email/Web Push), and a full audit log.
+- **Frontend** — built the Next.js UI with a bilingual (AR/EN) RTL‑aware, themeable design system on Radix + Tailwind, realtime updates, and installable PWA.
+- **Security & quality** — role‑based access control, input validation, request throttling, and an audit‑driven hardening pass across authentication, access scoping, and data exposure.
+- **DevOps** — containerized the stack and set up a self‑hosted CI/CD pipeline that auto‑builds, smoke‑tests, and auto‑rolls‑back on failure.
+
+**Tech:** TypeScript · NestJS · Next.js · React · Prisma · PostgreSQL · Redis · MinIO · Meilisearch · socket.io · Tailwind CSS · Docker · Model Context Protocol.
 
 ---
 
